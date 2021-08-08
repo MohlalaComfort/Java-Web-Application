@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {  
+             background: #C5E1A5;}
+        form {  
+            width: 50%;
+            margin: 60px auto;
+            background: #efefef; 
+            padding: 60px 120px 80px 120px;
+            text-align: center;
+            -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1); 
+            box-shadow: 2px 2px 3px rgba(0,0,0,0.1); 
+        }
+        
+         button{  
+            display: inline-block; 
+            padding: 12px 24px;  
+            background: rgb(220,220,220);  
+            font-weight: bold;  
+            color: rgb(120,120,120);  
+            border: none;  outline: none; 
+            border-radius: 3px;  
+            cursor: pointer;  
+            transition: ease .3s; 
+            }  
+        button:hover {  
+        background: #8BC34A;  
+             color: #ffffff; 
+        }
+       
+        </style>
+    </head>
+    <body>
+        
+         <form action = "HelloServlet" method="GET">
+            <h1>Student Registration Form</h1><br>
+          
+            First Name: <input type="text" name="FName" size="12">
+            Last Name: <input type="text" name="lName" size="12">
+            MI: <input type="text" name="MI" maxlength="1" size="1"><br><br><br>
+          
+            Gender: <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br><br>
+            
+
+            <label for="major">Major:</label>
+            <select name="major" id="major">
+            <option value="ICT">ICT</option>
+            <option value="BA">BA</option>
+            <option value="Hospitality">Hospitality</option>
+            <option value="Agriculture">Agriculture</option>
+            </select><br><br>
+            
+            <br><button type="Submit">Submit</button>
+            <button type="Reset">Reset</button>
+           
+          
+        </form>
+    </body>
+</html>
